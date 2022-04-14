@@ -56,7 +56,7 @@ do
 		for ((i=$s_unixtime;i<$d_unixtime;i=i+60))
 		do
 			#find the data in the log 
-			result=$(grep "$i * $ip * $cpu_id" log1.txt)
+			result=$(grep "$i * $ip * $cpu_id" data_logs.txt)
 			
 			#if nothing is found display message to user
 			if [ -z "$result" ];
